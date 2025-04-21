@@ -1,0 +1,65 @@
+import React, { useState } from 'react';
+import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
+
+
+function LoginScreen({ navigation }) {
+  const [username, setUsername] = useState(''); 
+  const [password, setPassword] = useState(''); 
+
+
+  const handleLogin = () => {
+   
+    console.log('Tentativa de login com:', username, password);
+
+    
+    navigation.navigate('Register');
+
+    
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.label}>Usuário:</Text>
+      <TextInput
+        style={styles.input}
+        value={username}
+        onChangeText={setUsername} 
+        placeholder="Digite seu usuário" //senha do usuário
+        autoCapitalize="none" 
+      />
+
+      <Text style={styles.label}>Senha:</Text>
+      <TextInput
+        style={styles.input}
+        value={password}
+        onChangeText={setPassword} // Atualiza o estado 'senha' do usuário
+        placeholder="Digite sua senha"
+        secureTextEntry // Ocultar a senha
+      />
+
+      <Button title="Entrar / Cadastrar" onPress={handleLogin} />
+    </View>
+  );
+}
+
+// Estilização
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 20,
+    justifyContent: 'center', 
+  },
+  label: {
+    fontSize: 16,
+    marginBottom: 5,
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#ccc',
+    padding: 10,
+    marginBottom: 15,
+    borderRadius: 5,
+    fontSize: 16,
+  },
+});
