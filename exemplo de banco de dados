@@ -1,0 +1,8 @@
+INSERT INTO usuarios (nome_completo, data_nascimento, email, telefone, habilidade, como_ajudar) VALUES
+('Ana Silva', '1995-03-15', 'ana.silva@email.com', '21987654321', 'Culinária Vegana', 'Posso dar aulas de culinária ou preparar refeições para eventos.'),
+('Bruno Costa', '1988-11-20', 'bruno.costa@email.com', '11912345678', 'Desenvolvimento Web (React, Node.js)', 'Desenvolver sites e aplicações web, ajudar com problemas de código.'),
+('Carla Dias', '2001-07-01', 'carla.dias@email.com', '31999998888', 'Tradução Inglês/Português', 'Traduzir documentos, websites ou auxiliar na comunicação.'),
+('Daniel Faria', '1992-01-30', 'daniel.faria@email.com', '41988776655', 'Marcenaria Básica', 'Criar pequenos móveis, prateleiras ou realizar reparos em madeira.'),
+('Elena Santos', '1998-09-05', 'elena.santos@email.com', '51977665544', 'Cuidados com Idosos', 'Acompanhamento, auxílio em tarefas diárias, companhia.');
+
+//OBS: dados não são reais, para não aferir a LGPD como contratante.
